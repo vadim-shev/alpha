@@ -455,7 +455,7 @@ const DarkMode = {
 		}
 	},
 	methods: {
-		addUser: () => {
+		addUser: function() {
 			if(this.isValid) {
 				usersRef.push(this.newUser)
 				this.newUser.name = ''
