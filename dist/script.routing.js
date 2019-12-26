@@ -17,7 +17,13 @@ Vue.directive('scroll', {
 		let f = function(evt) {
 			document.querySelector('.home__meeting-neck').style.transition = '.3s'
 
-			window.scrollY >= 100 ? document.querySelector('header').style.backgroundColor = 'rgba(31,31,31,.9)' : document.querySelector('header').style.backgroundColor = 'transparent'
+			window.scrollY >= 100 && _hasClass(document.querySelector('.header'), "header--dark")? ( 
+				document.querySelector('.header--dark').style.backgroundColor = 'rgba(31,31,31,.9)' 
+			) : ( false )
+
+			window.scrollY >= 100 && _hasClass(document.querySelector('.header'), "header--light")? ( 
+				document.querySelector('.header--light').style.backgroundColor = 'rgba(232, 232, 232, 0.9)' 
+			) : ( false)
 			
 			window.scrollY <= 220 ? document.querySelector('.home__meeting-neck').style.top = scrollY + 'px' : window.scrollY > 220 ? document.querySelector('.home__meeting-neck').style.top = 219.9 + 'px' : document.querySelector('.home__meeting-neck').style.top = 0 + 'px'
 			

@@ -11,12 +11,14 @@ const DarkMode = {
 			},
 			showModal: false,
 			mail: "vadim.shevchenko2016@gmail.com",
-			phone: "+38 (097) 88-33-510"
+			phone: "+38 (097) 88-33-510",
+			intro: "intro",
+			Experiences: "Protons give an atom its identity, electrons its personality. - Bill Bryson, A short history of nearly everything"
 		}
 	},
 	template: `
 		<div v-scroll="handleScroll" class="--dark" v-cloak>
-			<header class="header" id="header">
+			<header class="header header--dark" id="header">
 				<div class="container " style="display: flex; flex-direction: row; justify-content: space-between;">
 					<label for="menu-burger"  
 						id="show-modal" 
@@ -54,12 +56,12 @@ const DarkMode = {
 							<div class="header__content">
 								<div class="home__content__title">
 									<h2 class="home__content-title home__content-title--dark">
-										Hello everyone
+										{{ intro }}
 									</h2>
 								</div>
 								<div class="home__content__lead">
 									<p class="home__content-lead home__content-lead--dark">							
-										It was a quiet summer morning. The sun stood already pretty high in the clear sky but the fields were still sparkling with dew; a fresh breeze blew fragrantly from the scarce awakened valleys and in the forest, still damp and hushed, the birds were merrily carolling their morning song.
+										{{ Experiences }}
 									</p>
 								</div>
 							</div>

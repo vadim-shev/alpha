@@ -15,8 +15,8 @@ const LightMode = {
 		}
 	},
 	template: `
-		<div v-scroll="handleScroll" class="--light" v-cloak>
-			<header class="header" id="header">
+		<div v-scroll="handleScroll" class="--light base" v-cloak>
+			<header class="header header--light" id="header">
 				<div class="container " style="display: flex; flex-direction: row; justify-content: space-between;">
 					<label for="menu-burger"  
 						id="show-modal" 
@@ -455,7 +455,7 @@ const LightMode = {
 		}
 	},
 	methods: {
-		addUser: () => {
+		addUser: function() {
 			if(this.isValid) {
 				usersRef.push(this.newUser)
 				this.newUser.name = ''
