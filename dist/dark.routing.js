@@ -36,13 +36,13 @@ const DarkMode = {
 			<aside class="aside aside--dark">
 				<nav class="aside__nav">
 					<div class="aside__nav-item">
-						<a href="#" class="aside__link instagram" rel="instagram" @mouseenter="handleHover" @mouseleave="shutdownHover" >instagram</a>
+						<a href="https://www.instagram.com/vadim.shev_/" target="_blank" class="aside__link instagram" rel="instagram" @mouseenter="handleHover" @mouseleave="shutdownHover" >instagram</a>
 					</div>
 					<div class="aside__nav-item">
-						<a href="#" class="aside__link git" rel="git" @mouseenter="handleHover" @mouseleave="shutdownHover">github</a>
+						<a href="https://github.com/vadim-shev" target="_blank" class="aside__link git" rel="git" @mouseenter="handleHover" @mouseleave="shutdownHover">github</a>
 					</div>
 					<div class="aside__nav-item">
-						<a href="#" class="aside__link behance" rel="behance" @mouseenter="handleHover" @mouseleave="shutdownHover">behance</a>
+						<a href="https://www.behance.net/vadimshevcd5b9" target="_blank" class="aside__link behance" rel="behance" @mouseenter="handleHover" @mouseleave="shutdownHover">behance</a>
 					</div>
 				</nav>
 			</aside>
@@ -381,21 +381,21 @@ const DarkMode = {
 							<p class="footer__socials">
 								<span class="share">Share</span>
 								<span class="footer__dash"></span>
-								<a href="" 
+								<a href="https://www.instagram.com/vadim.shev_/" target="_blank"
 									class="footer_icon icon_instagram"
 									@mouseenter="handleHover" 
 									@mouseleave="shutdownHover"
 								>
 									<i class="fab fa-instagram"></i>
 								</a>
-								<a href="" 
+								<a href="https://github.com/vadim-shev" target="_blank"
 									class="footer_icon icon_github"
 									@mouseenter="handleHover" 
 									@mouseleave="shutdownHover"
 								>
 									<i class="fab fa-github"></i>
 								</a>
-								<a href="" 
+								<a href="https://www.behance.net/vadimshevcd5b9" target="_blank"
 									class="footer_icon icon_behance"
 									@mouseenter="handleHover" 
 									@mouseleave="shutdownHover">
