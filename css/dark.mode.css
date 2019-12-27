@@ -88,3 +88,7 @@
         border-bottom-color: #909090 ; }
     .footer__dash--dark:before {
         border-bottom: 1px solid #E8E8E8 ; }
+    .modal--dark {
+        background-color: #1F1F1F; }
+    .modal--dark a {
+        color: #AAAAAA !important; }

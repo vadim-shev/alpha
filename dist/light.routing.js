@@ -25,7 +25,7 @@ const LightMode = {
 						@mouseenter="handleHover" @mouseleave="shutdownHover">
 						<span @mouseenter="handleHover" @mouseleave="shutdownHover" class="bar" ></span>
 					</label>
-					<modal v-if="showModal" @close="modalHide">
+					<modal class="modal--light" v-if="showModal" @close="modalHide">
 						<h3 slot="header">custom header</h3>
 					</modal>
 					<router-link to="/dark" class="header__logo" title="Go to light version(starts at 9:00)" >		
@@ -466,6 +466,7 @@ const LightMode = {
 		modalShow: function(event) {		 
 			this.showModal == false ? ( this.showModal = true, setTimeout( () => { document.querySelector('.modal-mask').style.opacity = "1"; }, 10)
 			):( this.showModal = false, setTimeout( () => { document.querySelector('.modal-mask').style.opacity = "0"; }, 10) )
+			this.showModal ? addClass(document.querySelector('.bar'), "burger--js") : removeClass(document.querySelector('.bar'), "burger--js")
 		},
 		modalHide: function(event) {
 			this.showModal == true ? ( this.showModal = false, setTimeout( () => { document.querySelector('.modal-mask').style.opacity = "0"; }, 10)

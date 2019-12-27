@@ -28,7 +28,7 @@
     height: 100%;
     z-index: 0; }
     .home__meeting-neck--light:before {
-        background-image: url(../assets/dark/background_light.png) ; }
+        background-image: url(../assets/dark/background_light.png); }
     .home__content-lead--light {
         color: #414141 ; }
     .home__content-title--light, .home__about-title--light, .home__blog-title-text--light, .home__contacts-title-text--light {
@@ -66,5 +66,11 @@
         border-bottom: 1px solid #414141 ; }
     .btn--light {
         color: #616161 ; }
-
+    .modal--light {
+        background-color: #E8E8E8;
+    }
+    .modal--light a {
+        font-family: "Oswald", sans-serif;
+        color: #414141 !important;       
+    }
     

@@ -38,11 +38,12 @@
 /**/
 .burger--js {
     color: #FFFFFF !important;
-    width: 20px !important; }
-    .burger--js:before,
+    width: 0px !important; }
+    .burger--js:before { 
+        transform: rotate(45deg) translate(5px, 6px); }
     .burger--js:after {
         color: #FFFFFF !important;
-        width: 10px !important; }
+        transform: rotate(-45deg) translate(5px, -6px); }
 .defaultFontD--js {
     color: #FFFFFF !important;
     -webkit-transition: color 0.3s ease-out, border-color 0.3s ease-out, background-color 0.3s ease-out;
